@@ -1,5 +1,5 @@
 PKG_NAME := pypi-pint
-URL = https://files.pythonhosted.org/packages/29/94/d5a951f0312a9824154fdf2e6a73bc4f9f487df11dbc8a2dbf3da7796130/Pint-0.20.tar.gz
+URL = https://files.pythonhosted.org/packages/f3/d1/56923579866231eb4e61f86f4728ccd84fc2add7ad111ee25e4b64df47ec/Pint-0.20.1.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
