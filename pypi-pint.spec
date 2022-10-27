@@ -4,7 +4,7 @@
 #
 Name     : pypi-pint
 Version  : 0.20
-Release  : 5
+Release  : 6
 URL      : https://files.pythonhosted.org/packages/29/94/d5a951f0312a9824154fdf2e6a73bc4f9f487df11dbc8a2dbf3da7796130/Pint-0.20.tar.gz
 Source0  : https://files.pythonhosted.org/packages/29/94/d5a951f0312a9824154fdf2e6a73bc4f9f487df11dbc8a2dbf3da7796130/Pint-0.20.tar.gz
 Summary  : Physical quantities module
@@ -72,7 +72,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1666742035
+export SOURCE_DATE_EPOCH=1666863553
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
