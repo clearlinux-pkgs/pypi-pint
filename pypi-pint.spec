@@ -4,10 +4,10 @@
 # Using build pattern: pyproject
 #
 Name     : pypi-pint
-Version  : 0.21
-Release  : 19
-URL      : https://files.pythonhosted.org/packages/5d/88/8bd8470ab8c1c1e59a3e7b7e83287152e1ed4cacd1dbf1eaefe0371a1fe3/Pint-0.21.tar.gz
-Source0  : https://files.pythonhosted.org/packages/5d/88/8bd8470ab8c1c1e59a3e7b7e83287152e1ed4cacd1dbf1eaefe0371a1fe3/Pint-0.21.tar.gz
+Version  : 0.22
+Release  : 20
+URL      : https://files.pythonhosted.org/packages/2c/4b/f06c9975298765c64ac9ca6f36be072e65e1437a03a472f5fabc5327ef4e/Pint-0.22.tar.gz
+Source0  : https://files.pythonhosted.org/packages/2c/4b/f06c9975298765c64ac9ca6f36be072e65e1437a03a472f5fabc5327ef4e/Pint-0.22.tar.gz
 Summary  : Physical quantities module
 Group    : Development/Tools
 License  : BSD-3-Clause
@@ -16,6 +16,9 @@ Requires: pypi-pint-license = %{version}-%{release}
 Requires: pypi-pint-python = %{version}-%{release}
 Requires: pypi-pint-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
+BuildRequires : pypi(setuptools)
+BuildRequires : pypi(setuptools_scm)
+BuildRequires : pypi(wheel)
 # Suppress stripping binaries
 %define __strip /bin/true
 %define debug_package %{nil}
@@ -56,16 +59,17 @@ Summary: python3 components for the pypi-pint package.
 Group: Default
 Requires: python3-core
 Provides: pypi(pint)
+Requires: pypi(typing_extensions)
 
 %description python3
 python3 components for the pypi-pint package.
 
 
 %prep
-%setup -q -n Pint-0.21
-cd %{_builddir}/Pint-0.21
+%setup -q -n Pint-0.22
+cd %{_builddir}/Pint-0.22
 pushd ..
-cp -a Pint-0.21 buildavx2
+cp -a Pint-0.22 buildavx2
 popd
 
 %build
@@ -73,7 +77,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1682974189
+export SOURCE_DATE_EPOCH=1685120270
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
