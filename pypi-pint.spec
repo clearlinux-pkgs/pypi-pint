@@ -7,7 +7,7 @@
 #
 Name     : pypi-pint
 Version  : 0.23
-Release  : 22
+Release  : 23
 URL      : https://files.pythonhosted.org/packages/02/41/002d020f140db35d971f4bdd73407d69fdf56c5ba5fcccc10776e27d3a6c/Pint-0.23.tar.gz
 Source0  : https://files.pythonhosted.org/packages/02/41/002d020f140db35d971f4bdd73407d69fdf56c5ba5fcccc10776e27d3a6c/Pint-0.23.tar.gz
 Summary  : Physical quantities module
