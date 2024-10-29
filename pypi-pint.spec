@@ -7,7 +7,7 @@
 #
 Name     : pypi-pint
 Version  : 0.24.3
-Release  : 26
+Release  : 27
 URL      : https://files.pythonhosted.org/packages/53/7d/30178ff193a076e35521592260915f74049bfa77dccb43ac8aa5abe1414b/pint-0.24.3.tar.gz
 Source0  : https://files.pythonhosted.org/packages/53/7d/30178ff193a076e35521592260915f74049bfa77dccb43ac8aa5abe1414b/pint-0.24.3.tar.gz
 Summary  : Physical quantities module
